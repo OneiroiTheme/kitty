@@ -1,0 +1,4 @@
+{
+    "input": "/.template/default.mustache",
+    "output": "/{{theme}}_{{plt}}.conf"
+}
