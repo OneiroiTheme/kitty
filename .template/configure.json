@@ -1,4 +1,36 @@
 {
-    "input": "/.template/default.mustache",
-    "output": "/{{theme}}_{{plt}}.conf"
+    "templates": {
+        "type": "mustache",
+        "input": "/.template/default.mustache",
+        "output": "/{{plt.theme}}_{{plt.plt}}.conf",
+        "views": [
+            {
+                "type": "plt",
+                "section_name": null
+            },
+            {
+                "type": "pltmeta",
+                "section_name": "plt"
+            },
+            {
+                "type": "port",
+                "section_name": "port"
+            }
+        ]
+    },
+    "port": {
+        "title": "Kitty",
+        "url": "https://sw.kovidgoyal.net/kitty/",
+        "version": "0.0.2"
+    },
+    "author": {
+        "name": "Crystar Z",
+        "email": "crystar.z@outlook.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/OneiroiTheme/kitty.git"
+    },
+    "license": "MIT",
+    "blurb": "A fancy, pink-accented theme."
 }

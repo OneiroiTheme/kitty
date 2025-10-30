@@ -1,46 +1,46 @@
 # vim:ft=kitty
-## name: {{theme}} {{plt}}
-## author: {{author}}
+## name: {{plt.theme}} {{plt.plt}}
+## author: {{port.author.name}}
 ## license: MIT
-## upstream: https://raw.githubusercontent.com/OneiroiTheme/kitty/main/{{theme}}_{{plt}}.conf
-## blurb: A fancy, pink-on-black theme
+## upstream: https://raw.githubusercontent.com/{{port.repository.publisher}}/{{port.repository.repo}}/main/{{plt.theme}}_{{plt.plt}}.conf
+## blurb: {{port.blurb}}
 
-foreground                      {{fg}}
-background                      {{bg}}
-selection_foreground            {{bg}}
-selection_background            {{prims}}
+foreground                      {{tm.foreground}}
+background                      {{tm.background}}
+selection_foreground            {{tm.foreground}}
+selection_background            {{tm.selection}}
 
-cursor                          {{prim}}
-cursor_text_color               {{bg}}
+cursor                          {{tm.caret}}
+cursor_text_color               {{tm.background}}
 
 #: black
-color0 {{bg}}
-color8 {{bgs}}
+color0 {{ansi.blk}}
+color8 {{ansi.gra}}
 
 #: red
-color1 {{reds}}
-color9 {{red}}
+color1 {{ansi.red}}
+color9 {{ansi.rrd}}
 
 #: green
-color2  {{gres}}
-color10 {{gre}}
+color2  {{ansi.grn}}
+color10 {{ansi.ggn}}
 
 #: yellow
-color3  {{yels}}
-color11 {{yel}}
+color3  {{ansi.yel}}
+color11 {{ansi.yyl}}
 
 #: blue
-color4  {{blus}}
-color12 {{blu}}
+color4  {{ansi.blu}}
+color12 {{ansi.bbl}}
 
 #: magenta
-color5  {{purs}}
-color13 {{pur}}
+color5  {{ansi.mag}}
+color13 {{ansi.mmg}}
 
 #: cyan
-color6  {{aqus}}
-color14 {{aqu}}
+color6  {{ansi.cya}}
+color14 {{ansi.ccy}}
 
 #: white
-color7  {{fgs}}
-color15 {{fg}}
+color7  {{ansi.wht}}
+color15 {{ansi.wwt}}
